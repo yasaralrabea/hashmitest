@@ -85,7 +85,6 @@ Route::put('/calendar/{id}/done', [TasksController::class, 'done'])->name('calen
 Route::get('/tasks', [StudentsTasksController::class, 'index'])->name('tasks.index');
 Route::post('/task/store', [StudentsTasksController::class, 'store'])->name('tasks.store');
 Route::get('/tasks/{id}/visit', [StudentsTasksController::class, 'task'])->name('visit.task');
-Route::get('/tasks/{id}', [StudentsTasksController::class, 'task'])->name('visit.task');
 Route::get('/tasks/{id}/close', [StudentsTasksController::class, 'close'])->name('tasks.close');
 Route::get('/tasks/{id}/open', [StudentsTasksController::class, 'open'])->name('tasks.open');
 Route::put('/tasks/{id}', [StudentsTasksController::class, 'update'])->name('tasks.update');
