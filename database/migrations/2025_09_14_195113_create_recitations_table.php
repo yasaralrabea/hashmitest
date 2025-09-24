@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->date('date');
             $table->string('notes')->nullable(); 
-            $table->string('subject'); 
+            $table->string('subject')->nullable();
             $table->string('condition')->default('no');
             $table->foreignId('student_id')->constrained()->onDelete('cascade'); 
             $table->timestamps();
