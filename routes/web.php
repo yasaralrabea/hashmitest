@@ -42,7 +42,7 @@ Route::get('/messages/{id}/edit', [MessageController::class, 'edit'])->name('mes
 Route::put('/messages/{id}', [MessageController::class, 'update'])->name('message.update');
 Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('message.destroy');
 
-Route::get('/lighting_s', [lightingController::class, 'index_to_student'])->name('lighting_s.index');
+Route::get('/lighting_s', [LightingController::class, 'index_to_student'])->name('lighting_s.index');
 
 });
 
