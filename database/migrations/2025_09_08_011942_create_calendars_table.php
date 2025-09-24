@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('goal');
             $table->date('date');
             $table->string('condition');
-            $table->string('students')->defult('no);
+            $table->string('students')->default('no);
             $table->softDeletes(); 
 
         });
