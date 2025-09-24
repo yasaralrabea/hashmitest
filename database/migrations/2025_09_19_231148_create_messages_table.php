@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('message');
             $table->string('subject')->nullable();
-            $table->string('to')->nullable();
             $table->foreignId('user_id')->constrained()->onDelete('cascade'); 
 
             $table->timestamps();
