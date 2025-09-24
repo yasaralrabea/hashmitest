@@ -9,7 +9,7 @@ use App\Http\Controllers\StudentsController;
 use App\Http\Controllers\StudentsTasksController;
 use App\Http\Controllers\AbsenceController;
 use App\Http\Controllers\RecitationController;
-use App\Http\Controllers\finController;
+use App\Http\Controllers\FinController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\lightingController;
 use App\Http\Controllers\FileController;
@@ -107,10 +107,10 @@ Route::post('/fins', [FinController::class, 'store'])->name('financial.store');
 Route::put('/fins/{fin}', [FinController::class, 'update'])->name('financial.update');
 Route::delete('/fins/{fin}', [FinController::class, 'destroy'])->name('financial.destroy');
 
-Route::get('/lighting', [lightingController::class, 'index'])->name('lighting.index');
-Route::post('/lighting', [lightingController::class, 'store'])->name('lighting.store');
-Route::put('/lighting/{id}', [lightingController::class, 'update'])->name('lighting.update');
-Route::delete('/lighting/{id}', [lightingController::class, 'destroy'])->name('lighting.destroy');
+Route::get('/lighting', [LightingController::class, 'index'])->name('lighting.index');
+Route::post('/lighting', [LightingController::class, 'store'])->name('lighting.store');
+Route::put('/lighting/{id}', [LightingController::class, 'update'])->name('lighting.update');
+Route::delete('/lighting/{id}', [LightingController::class, 'destroy'])->name('lighting.destroy');
 
 Route::put('/budget/update', [FinController::class, 'update_budget'])->name('budget.update');
 
