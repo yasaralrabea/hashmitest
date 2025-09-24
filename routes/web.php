@@ -11,7 +11,7 @@ use App\Http\Controllers\AbsenceController;
 use App\Http\Controllers\RecitationController;
 use App\Http\Controllers\FinController;
 use App\Http\Controllers\MessageController;
-use App\Http\Controllers\lightingController;
+use App\Http\Controllers\LightingController;
 use App\Http\Controllers\FileController;
 
 
